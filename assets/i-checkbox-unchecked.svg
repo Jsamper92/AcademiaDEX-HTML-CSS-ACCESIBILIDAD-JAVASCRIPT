@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>02BD4BAD-40B9-4F6C-8D4A-C8FF866274C1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="#9aae04" stroke-width="1" fill="#9aae04" fill-rule="evenodd">
+        <g id="D_REE_Componentes" transform="translate(-638.000000, -6436.000000)" fill="#9aae04">
+            <g id="Inputs" transform="translate(30.000000, 4614.000000)">
+                <g id="Molecule/inputs/icon_input/pasive" transform="translate(591.000000, 1806.000000)">
+                    <g id="Atom/Icon/ico_checkbox_unchecked" transform="translate(16.000000, 15.000000)">
+                        <path d="M17,3.875 C17,3.392 16.608,3 16.125,3 L3.875,3 C3.392,3 3,3.392 3,3.875 L3,16.125 C3,16.608 3.392,17 3.875,17 L16.125,17 C16.608,17 17,16.608 17,16.125 L17,3.875 Z M18.75,3 L18.75,17 C18.75,17.966875 17.966875,18.75 17,18.75 L3,18.75 C2.033125,18.75 1.25,17.966875 1.25,17 L1.25,3 C1.25,2.033125 2.033125,1.25 3,1.25 L17,1.25 C17.966875,1.25 18.75,2.033125 18.75,3 L18.75,3 Z" id="uncheck"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
