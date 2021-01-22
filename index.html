@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso básico HTML5</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Hola Mundo</h1>
+      <nav>
+        <ul>
+          <li>Menu item 1</li>
+          <li>Menu item 2</li>
+          <li>Menu item 3</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <article>
+        <h2>Mi noticia</h2>
+        <div>
+          <div>
+            <figure><img src="assets/html5.jpg" alt="image html5" /></figure>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              esse ad doloribus magni, vel voluptatibus animi veritatis
+              architecto voluptatem laudantium perspiciatis non itaque, unde
+              eius? Dignissimos quidem eveniet dolorem blanditiis?
+            </p>
+            <button>Más información</button>
+          </div>
+          <div>
+            <figure><img src="assets/css3.jpg" alt="image css3" /></figure>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              esse ad doloribus magni, vel voluptatibus animi veritatis
+              architecto voluptatem laudantium perspiciatis non itaque, unde
+              eius? Dignissimos quidem eveniet dolorem blanditiis?
+            </p>
+            <button>Más información</button>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2>Mi formulario</h2>
+        <form>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" />
+            <label for="apellidos">Apellidos</label>
+            <input
+              type="text"
+              name="apellidos"
+              id="apellidos"
+              placeholder="apellidos"
+            />
+            <label for="phone">Nombre</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="teléfono"
+            />
+            <label class="inline-block" for="dni">DNI</label>
+            <input
+              class="inline-block"
+              type="radio"
+              name="passport"
+              id="dni"
+              value="dni"
+            />
+            <label class="inline-block" for="nie">NIE</label>
+            <input
+              class="inline-block"
+              type="radio"
+              name="passport"
+              id="nie"
+              value="nie"
+            />
+            <label for="document">Nº Documento</label>
+            <input
+              type="text"
+              name="document"
+              id="document"
+              placeholder="document"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Otros datos</legend>
+            <label for="family">Número de hermanos/as</label>
+            <input
+              type="text"
+              name="family"
+              id="family"
+              placeholder="Nº de hermanos/as"
+            />
+            <fieldset class="hide-fieldset">
+              <legend>Deportes favoritos</legend>
+              <ol>
+                <li>
+                  <label class="inline-block" for="football">Fútbol</label>
+                  <input
+                    class="inline-block"
+                    type="checkbox"
+                    name="football"
+                    id="football"
+                  />
+                </li>
+                <li>
+                  <label class="inline-block" for="basketball"
+                    >Baloncesto</label
+                  >
+                  <input
+                    class="inline-block"
+                    type="checkbox"
+                    name="basketball"
+                    id="basketball"
+                  />
+                </li>
+                <li>
+                  <label class="inline-block" for="rugby">Rugby</label>
+                  <input
+                    class="inline-block"
+                    type="checkbox"
+                    name="rugby"
+                    id="rugby"
+                  />
+                </li>
+                <li>
+                  <label class="inline-block" for="padel">Padel</label>
+                  <input
+                    class="inline-block"
+                    type="checkbox"
+                    name="padel"
+                    id="padel"
+                  />
+                </li>
+                <li>
+                  <label class="inline-block" for="vascaBall"
+                    >Pelota vasca</label
+                  >
+                  <input
+                    class="inline-block"
+                    type="checkbox"
+                    name="vascaBall"
+                    id="vascaBall"
+                  />
+                </li>
+              </ol>
+            </fieldset>
+          </fieldset>
+          <button type="reset">Reset Form</button>
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+
+      <article>
+        <table>
+          <caption>
+            Titulo de nuestra tabla molona
+          </caption>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Teléfono</th>
+              <th>DNI/NIE</th>
+              <th>Deportes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carlos</td>
+              <td>Casalengua</td>
+              <td>12345678</td>
+              <td>12345677</td>
+              <td>Futbol,padel</td>
+            </tr>
+            <tr>
+              <td>Jesus</td>
+              <td>Cadenas</td>
+              <td>12345678</td>
+              <td>12345678</td>
+              <td>rugby, pelota vasca</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <aside>
+      <img src="assets/publicity.png" alt="publicity" />
+    </aside>
+  </body>
+</html>
