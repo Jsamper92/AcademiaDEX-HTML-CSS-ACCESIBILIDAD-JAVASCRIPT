@@ -74,6 +74,11 @@ html {
   font-family: var(--font-primary);
   font-size: var(--base_font_size);
 }
+
+h1,
+ul{
+  margin: 0;
+}
 /*--------------------- END GENERAL ---------------------*/
 
 /*--------------------- WRAPPER ---------------------*/
@@ -118,7 +123,7 @@ display: none;
   display: block;
   margin-left: auto;
 }
-.image-publicity > img {
+.image-publicity img {
   width: 100%;
   height: max-content;
 }
@@ -209,31 +214,47 @@ display: none;
 .form-data {
   margin-block-end: 10px;
 }
-.form-data > .container-form {
+.form-data  .container-form {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
-.form-data > .container-form > input {
+.form-data  .container-form  input {
   border-style: solid;
   border-width: 1px;
   border-color: var(--primary-theme);
   height: 30px;
 }
-.form-data > .container-form > label {
+
+.other-data .container-form{
+  align-self: flex-start;
+}
+
+.form-data  .container-form  label {
   margin-bottom: 10px;
 }
-.form-data > .container-form > ol > li {
+.form-data  .container-form  ol  li {
   margin-top: 5px;
 }
+
+.form-data  .container-form  ol  li label{
+  width: calc(100% - 30px);
+}
+
+.form-data  .container-form  ol  li input {
+  border: 0;
+}
+
 .form-title {
   padding: 10px;
 }
-.form-data > .container-radiobutton {
+.form-data  .container-radiobutton {
   /* width: 300px; */
   display: inline-block;
 }
-.form-data > .container-radiobutton > input {
+.form-data  .container-radiobutton  input {
   height: initial;
 }
 .input-checkbox {
@@ -266,11 +287,13 @@ display: none;
   content: "\e901";
 } */
 .btn {
-  width: auto;
+  width: 100%;
   background-color: var(--primary-theme);
   color: white;
   padding: 5px 10px;
+  margin-bottom: 20px;
   border: 1px solid black;
+  
 }
 .btn:hover {
   background-color: #6c7a00;
@@ -305,7 +328,7 @@ td {
 }
 
 /* GRID */
-
+/* 
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -607,4 +630,5 @@ td {
     min-width: 100%;
     max-width: 100%;
   }
-}
+} */
+

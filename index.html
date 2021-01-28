@@ -1,233 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso básico CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+</head>
 
-  <body>
-    <header class="header container">
-      <div class="col-sm-12 col-md-12 col-lg-12">
-        <h1 class="principal-title">Hola Mundo</h1>
-        <nav>
-          <ul class="navigation-ul">
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-1">Articulo 1</a>
-            </li>
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-2">Articulo 2</a>
-            </li>
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-3">Articulo 3</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+<body>
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+                <h1 class="principal-title">Hola Mundo</h1>
+                <nav>
+                    <ul class="navigation-ul">
+                        <li class="navigation-list">
+                            <a class="navigation-link" href="#element-1">Articulo 1</a>
+                        </li>
+                        <li class="navigation-list">
+                            <a class="navigation-link" href="#element-2">Articulo 2</a>
+                        </li>
+                        <li class="navigation-list">
+                            <a class="navigation-link" href="#element-3">Articulo 3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <section class="container">
-      <main class="col-sm-12 col-md-12 col-lg-8">
-        <article class="news">
-          <div class="container-news">
-            <h2 class="subtitle">Mi Noticia</h2>
-            <div class="container-paragraph" id="element-1">
-              <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/html5.jpg" alt="image html5" />
-              </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
-                <p class="paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae esse ad doloribus magni, vel voluptatibus animi
-                  veritatis architecto voluptatem laudantium perspiciatis non
-                  itaque, unde eius? Dignissimos quidem eveniet dolorem
-                  blanditiis?
-                </p>
-                <button class="btn">Más información</button>
-              </div>
-            </div>
-            <div class="container-paragraph" id="element-2">
-              <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/css3.jpg" alt="image html5" />
-              </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
-                <p class="paragraph ">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae esse ad doloribus magni, vel voluptatibus animi
-                  veritatis architecto voluptatem laudantium perspiciatis non
-                  itaque, unde eius? Dignissimos quidem eveniet dolorem
-                  blanditiis?
-                </p>
-                <button class="btn">Más información</button>
-              </div>
-            </div>
-            <div class="container-paragraph" id="element-3">
-              <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/html5.jpg" alt="image html5" />
-              </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
-                <p class="paragraph ">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae esse ad doloribus magni, vel voluptatibus animi
-                  veritatis architecto voluptatem laudantium perspiciatis non
-                  itaque, unde eius? Dignissimos quidem eveniet dolorem
-                  blanditiis?
-                </p>
-                <button class="btn">Más información</button>
-              </div>
-            </div>
-          </div>
-        </article>
-        <section class="container-forms">
-          <h2 class="subtitle">Mi Formulario</h2>
-          <form>
-            <fieldset class="form-data personal-data container">
-              <legend class="form-title">Datos personales</legend>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="name">Nombre</label>
-                <input class="input-text" type="text" id="name" />
-              </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="surname">Apellidos</label>
-                <input class="input-text" type="text" id="surname" />
-              </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="telephone">Teléfono</label>
-                <input class="input-text" type="tel" id="telephone" />
-              </div>
-              <div
-                class="container-form col-sm-12 col-md-6 col-lg-2 container-radiobutton"
-              >
-                <input
-                  class="input-radio"
-                  type="radio"
-                  id="dni"
-                  name="identityCard"
-                  value="DNI"
-                />
-                <label class="label" for="dni">DNI</label>
-                <input
-                  class="input-radio"
-                  type="radio"
-                  id="nie"
-                  name="identityCard"
-                  value="NIE"
-                />
-                <label class="label" for="nie">NIE</label><br />
-              </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="numberIdentityCard"
-                  >Nº Documento</label
-                >
-                <input class="input-text" type="text" id="numberIdentityCard" />
-              </div>
-            </fieldset>
-            <fieldset class="form-data other-data container">
-              <legend class="form-title">Otros datos</legend>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="siblings"
-                  >Número de hermanos/as</label
-                >
-                <input type="number" id="siblings" />
-              </div>
-              <div class="container-form">
-                <p>Deportes favoritos:</p>
-                <ol>
-                  <li>
-                    <label class="label" for="futbol">Fútbol</label>
-                    <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="futbol"
-                      id="futbol"
-                      value="small"
-                    />
-                  </li>
-                  <li>
-                    <label class="label" for="bascket">Baloncesto</label>
-                    <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="size"
-                      id="bascket"
-                      value="small"
-                    />
-                  </li>
-                  <li>
-                    <label class="label" for="rugby">Rugby</label>
-                    <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="size"
-                      id="rugby"
-                      value="small"
-                    />
-                  </li>
-                  <li>
-                    <label class="label" for="paddle">Padel</label>
-                    <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="size"
-                      id="paddle"
-                      value="small"
-                    />
-                  </li>
-                  <li>
-                    <label class="label" for="basque_ball">Pelota vasca</label>
-                    <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="size"
-                      id="basque_ball"
-                      value="small"
-                    />
-                  </li>
-                </ol>
-              </div>
-            </fieldset>
-            <button class="btn" type="reset" value="Reset Form">
-              Reset form
-            </button>
-            <button class="btn" type="submit">Enviar</button>
-          </form>
-        </section>
-        <div class="container-table">
-          <table class="table-cool">
-            <caption>
-              <h2 class="subtitle">Título de nuestra Tabla Molona</h2>
-            </caption>
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Teléfono</th>
-                <th>DNI/NIE</th>
-                <th>Deportes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Carlos</td>
-                <td>Casalengua</td>
-                <td>987654321</td>
-                <td>12345678-A</td>
-                <td>Futbol, Padel</td>
-              </tr>
-              <tr>
-                <td>Jesús</td>
-                <td>Cárdenas</td>
-                <td>987654329</td>
-                <td>12345678-Z</td>
-                <td>Rugby, Pelota vasca</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+            <main class="col-12 col-lg-8">
+                <article class="news">
+                    <div class="container-news">
+                        <h2 class="subtitle">Mi Noticia</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="card" style="width: 18rem;" id="element-1">
+                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card" style="width: 18rem;" id="element-2">
+                                    <img src="assets/images/css3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card" style="width: 18rem;" id="element-3">
+                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="container-forms">
+                    <h2 class="subtitle">Mi Formulario</h2>
+                    <form>
+                        <fieldset class="form-data personal-data">
+                            <legend class="form-title">Datos personales</legend>
+                            <div class="row">
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <label class="label" for="name">Nombre</label>
+                                    <input class="input-text" type="text" id="name" />
+                                </div>
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <label class="label" for="surname">Apellidos</label>
+                                    <input class="input-text" type="text" id="surname" />
+                                </div>
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <label class="label" for="telephone">Teléfono</label>
+                                    <input class="input-text" type="tel" id="telephone" />
+                                </div>
+                                <div class="container-form col-12 col-md-4 col-lg-6 container-radiobutton">
+                                    <input class="input-radio" type="radio" id="dni" name="identityCard" value="DNI" />
+                                    <label class="label" for="dni">DNI</label>
+                                    <input class="input-radio" type="radio" id="nie" name="identityCard" value="NIE" />
+                                    <label class="label" for="nie">NIE</label><br />
+                                </div>
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <label class="label" for="numberIdentityCard">Nº Documento</label>
+                                    <input class="input-text" type="text" id="numberIdentityCard" />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-data other-data">
+                            <legend class="form-title">Otros datos</legend>
+                            <div class="row">
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <label class="label" for="siblings">Número de hermanos/as</label>
+                                    <input type="number" id="siblings" />
+                                </div>
+                                <div class="container-form col-12 col-md-4 col-lg-6">
+                                    <p>Deportes favoritos:</p>
+                                    <ol>
+                                        <li>
+                                            <label class="label" for="futbol">Fútbol</label>
+                                            <input class="input-checkbox" type="checkbox" name="futbol" id="futbol"
+                                                value="small" />
+                                        </li>
+                                        <li>
+                                            <label class="label" for="bascket">Baloncesto</label>
+                                            <input class="input-checkbox" type="checkbox" name="size" id="bascket"
+                                                value="small" />
+                                        </li>
+                                        <li>
+                                            <label class="label" for="rugby">Rugby</label>
+                                            <input class="input-checkbox" type="checkbox" name="size" id="rugby"
+                                                value="small" />
+                                        </li>
+                                        <li>
+                                            <label class="label" for="paddle">Padel</label>
+                                            <input class="input-checkbox" type="checkbox" name="size" id="paddle"
+                                                value="small" />
+                                        </li>
+                                        <li>
+                                            <label class="label" for="basque_ball">Pelota vasca</label>
+                                            <input class="input-checkbox" type="checkbox" name="size" id="basque_ball"
+                                                value="small" />
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-3 col-lg-3">
+                                <button class="btn" type="reset" value="Reset Form">
+                                    Reset form
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-3">
+                                <button class="btn" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <div class="container-table">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table-cool">
+                                <caption>
+                                    <h2 class="subtitle">Título de nuestra Tabla Molona</h2>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Apellidos</th>
+                                        <th>Teléfono</th>
+                                        <th>DNI/NIE</th>
+                                        <th>Deportes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Carlos</td>
+                                        <td>Casalengua</td>
+                                        <td>987654321</td>
+                                        <td>12345678-A</td>
+                                        <td>Futbol, Padel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jesús</td>
+                                        <td>Cárdenas</td>
+                                        <td>987654329</td>
+                                        <td>12345678-Z</td>
+                                        <td>Rugby, Pelota vasca</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside class="col-12 col-lg-4 image-publicity">
+                <img src="./assets/images/publicity.png" alt="publicidad" />
+            </aside>
         </div>
-      </main>
-      <aside class="col-sm-12 col-md-12 col-lg-4 image-publicity">
-        <img src="./assets/images/publicity.png" alt="publicidad" />
-      </aside>
     </section>
-  </body>
+</body>
+
 </html>
