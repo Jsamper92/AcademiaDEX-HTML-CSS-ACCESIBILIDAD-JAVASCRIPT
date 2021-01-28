@@ -165,3 +165,30 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
   }...
 }
 ~~~
+
+
+## Práctica BOOSTRAP
+Se deberán modificar los estilos que sean necesarios para que se mantenga la misma estética inicial tras integrar la librería de boostrap.
+## Ejercicio 1
+1. Dada la estructura base, importar el link de los estilos de boostrap en nuestro index.html
+2. Comprobar en el arbol dom, que la clase "container" esta cogiendo los estilos de boostrap y no de vuestro "style.scss"
+
+## Ejercicio 2
+1. Modificar el header a container-fluid, y SÓLO usando las clases de flex de boostrap (los cols son para el siguiente ejercicio) (https://getbootstrap.com/docs/5.0/utilities/flex/), disponer el h1 y el nav en columna en mobile, y en row dispuestos uno al lado del otro en desktop(md).
+2. Alinear el h1 y el nav por el centro y posicionarlos uno en cada extremo del header en resolucion desktop(md). En mobile deberan mantanerse, una debajo del otro.
+3. Maquetar con los cols la seccion del main y el aside para que queden en columna en mobile y tablet y en linea en resolución desktop.
+
+## Ejercicio 3
+1. Sustituir las card que hay dentro del article por el componente de boostrap "https://getbootstrap.com/docs/5.0/components/card/" manteniendo el punto de ancla del nav operativo, maquetar en columna para mobile y en linea para tablet y desktop.
+
+## Ejercicio 4
+1. Modificar el formulario para que quede a 1 columna en mobile, 3 en tablet y 2 desktop.
+
+## Ejercicio 5
+1. Modificar la tabla para que al ancho ocupe el disponible.
+
+### BONUS###
+Modificar los estilos pertinentes para que:
+- el radio quede lo más alineado visualmente con el input que tiene al lado.
+- se deje un espacio inferior entre campos y botones para que no queden tan pegados unos a otros.
+- La caja verde de los checkbox quede alinada a la derecha en linea recta y el label en el aldo opuesto.
