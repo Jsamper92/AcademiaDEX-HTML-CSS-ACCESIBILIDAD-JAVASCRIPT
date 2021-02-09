@@ -18,13 +18,13 @@
                 <nav>
                     <ul class="navigation-ul">
                         <li class="navigation-list">
-                            <a class="navigation-link" href="#element-1">Articulo 1</a>
+                            <a class="navigation-link" title="See Articulo 1" href="#element-1">Articulo 1</a>
                         </li>
                         <li class="navigation-list">
-                            <a class="navigation-link" href="#element-2">Articulo 2</a>
+                            <a class="navigation-link" title="See Articulo 2" href="#element-2">Articulo 2</a>
                         </li>
                         <li class="navigation-list">
-                            <a class="navigation-link" href="#element-3">Articulo 3</a>
+                            <a class="navigation-link" title="See articulo 3" href="#element-3">Articulo 3</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,31 +40,31 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="card" style="width: 18rem;" id="element-1">
-                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <a href="#" title="Open more information about html5" class="btn btn-primary">Go html5</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="card" style="width: 18rem;" id="element-2">
-                                    <img src="assets/images/css3.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/images/css3.jpg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <a href="#" title="Open more information about css3" class="btn btn-primary">Go css3</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="card" style="width: 18rem;" id="element-3">
-                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/images/html5.jpg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <a href="#" title="Open more information about html5 2" class="btn btn-primary">Go html5 2</a>
                                     </div>
                                 </div>
                             </div>
@@ -79,15 +79,15 @@
                             <div class="row">
                                 <div class="container-form col-12 col-md-4 col-lg-6">
                                     <label class="label" for="name">Nombre</label>
-                                    <input class="input-text" type="text" id="name" />
+                                    <input class="input-text" type="text" id="name" placeholder="Escribe aquí tu nombre"/>
                                 </div>
                                 <div class="container-form col-12 col-md-4 col-lg-6">
                                     <label class="label" for="surname">Apellidos</label>
-                                    <input class="input-text" type="text" id="surname" />
+                                    <input class="input-text" type="text" id="surname" placeholder="Escribe aquí tus apellidos"/>
                                 </div>
                                 <div class="container-form col-12 col-md-4 col-lg-6">
                                     <label class="label" for="telephone">Teléfono</label>
-                                    <input class="input-text" type="tel" id="telephone" />
+                                    <input class="input-text" type="tel" id="telephone" placeholder="000 000 000"/>
                                 </div>
                                 <div class="container-form col-12 col-md-4 col-lg-6 container-radiobutton">
                                     <input class="input-radio" type="radio" id="dni" name="identityCard" value="DNI" />
@@ -97,7 +97,7 @@
                                 </div>
                                 <div class="container-form col-12 col-md-4 col-lg-6">
                                     <label class="label" for="numberIdentityCard">Nº Documento</label>
-                                    <input class="input-text" type="text" id="numberIdentityCard" />
+                                    <input class="input-text" type="text" id="numberIdentityCard" placeholder="00000000A"/>
                                 </div>
                             </div>
                         </fieldset>
@@ -106,10 +106,10 @@
                             <div class="row">
                                 <div class="container-form col-12 col-md-4 col-lg-6">
                                     <label class="label" for="siblings">Número de hermanos/as</label>
-                                    <input type="number" id="siblings" />
+                                    <input type="number" id="siblings" placeholder="00"/>
                                 </div>
                                 <div class="container-form col-12 col-md-4 col-lg-6">
-                                    <p>Deportes favoritos:</p>
+                                    <span>Deportes favoritos:</span>
                                     <ol>
                                         <li>
                                             <label class="label" for="futbol">Fútbol</label>
@@ -157,41 +157,71 @@
                     <div class="row">
                         <div class="col">
                             <table class="table-cool">
-                                <caption>
-                                    <h2 class="subtitle">Título de nuestra Tabla Molona</h2>
-                                </caption>
+                                <caption class="table-cool__caption">Título de nuestra Tabla Molona</caption>
                                 <thead>
                                     <tr>
-                                        <th>Nombre</th>
-                                        <th>Apellidos</th>
-                                        <th>Teléfono</th>
-                                        <th>DNI/NIE</th>
-                                        <th>Deportes</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Apellidos</th>
+                                        <th scope="col">Teléfono</th>
+                                        <th scope="col">DNI/NIE</th>
+                                        <th scope="col">Deportes</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Carlos</td>
-                                        <td>Casalengua</td>
-                                        <td>987654321</td>
-                                        <td>12345678-A</td>
-                                        <td>Futbol, Padel</td>
+                                        <td data-title="Nombre">Carlos</td>
+                                        <td data-title="Apellidos">Casalengua</td>
+                                        <td data-title="Teléfono">987654321</td>
+                                        <td data-title="DNI/NIE">12345678-A</td>
+                                        <td data-title="Deportes">Futbol, Padel</td>
                                     </tr>
                                     <tr>
-                                        <td>Jesús</td>
-                                        <td>Cárdenas</td>
-                                        <td>987654329</td>
-                                        <td>12345678-Z</td>
-                                        <td>Rugby, Pelota vasca</td>
+                                        <td data-title="Nombre">Jesús</td>
+                                        <td data-title="Apellidos">Cárdenas</td>
+                                        <td data-title="Teléfono">987654329</td>
+                                        <td data-title="DNI/NIE">12345678-Z</td>
+                                        <td data-title="Deportes">Rugby, Pelota vasca</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="table-cool table-cool--fake" role="table" aria-label="Tabla molona" aria-describedby="my_table_desc">
+                                <span class="table-cool__caption" id="my_table_desc">Título de nuestra Tabla Molona fake</span>
+                                <div class="table-cool__thead" role="rowgroup">
+                                    <div class="table-cool__tr" role="row">
+                                        <div scope="col" class="table-cool__th" role="columnheader">Nombre</div>
+                                        <div scope="col" class="table-cool__th" role="columnheader">Apellidos</div>
+                                        <div scope="col" class="table-cool__th" role="columnheader">Teléfono</div>
+                                        <div scope="col" class="table-cool__th" role="columnheader">DNI/NIE</div>
+                                        <div scope="col" class="table-cool__th" role="columnheader">Deportes</div>
+                                    </div>
+                                </div>
+                                <div class="table-cool__tbody" role="rowgroup">
+                                    <div class="table-cool__tr" role="row">
+                                        <div data-title="Nombre" class="table-cool__td" role="cell">Carlos</div>
+                                        <div data-title="Apellidos" class="table-cool__td" role="cell">Casalengua</div>
+                                        <div data-title="Teléfono" class="table-cool__td" role="cell">987654321</div>
+                                        <div data-title="DNI/NIE" class="table-cool__td" role="cell">12345678-A</div>
+                                        <div data-title="Deportes" class="table-cool__td" role="cell">Futbol, Padel</div>
+                                    </div>
+                                    <div class="table-cool__tr" role="row">
+                                        <div data-title="Nombre" class="table-cool__td" role="cell">Jesús</div>
+                                        <div data-title="Apellidos" class="table-cool__td" role="cell">Cárdenas</div>
+                                        <div data-title="Teléfono" class="table-cool__td" role="cell">987654329</div>
+                                        <div data-title="DNI/NIE" class="table-cool__td" role="cell">12345678-Z</div>
+                                        <div data-title="Deportes" class="table-cool__td" role="cell">Rugby, Pelota vasca</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <aside class="col-12 col-lg-4 image-publicity">
-                <img src="./assets/images/publicity.png" alt="publicidad" />
+                <img src="./assets/images/publicity.png" alt="aqui iria la descripcion del texto que aparece en la imagen, ya que la información está incrustada en ella" />
             </aside>
         </div>
     </section>
