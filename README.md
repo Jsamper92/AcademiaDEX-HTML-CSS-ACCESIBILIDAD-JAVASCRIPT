@@ -192,3 +192,23 @@ Modificar los estilos pertinentes para que:
 - el radio quede lo más alineado visualmente con el input que tiene al lado.
 - se deje un espacio inferior entre campos y botones para que no queden tan pegados unos a otros.
 - La caja verde de los checkbox quede alinada a la derecha en linea recta y el label en el aldo opuesto.
+
+## Práctica Accesibilidad web
+## Ejercicio 1
+1. Usar el validador de html y css de la w3c, y analizar sus resultados(recordad que hay casos que nos os levantarán).
+
+2. Añadir todos los atributos html que falten y modificar los necesarios. (Recordad que si una imagen es decorativa, su alt debe ir vacío y si contiene información relevante, deberá ir indicada en su alt).
+
+3. Revisar que los literales que desencadenan acciones, tienen sentido o deberán cambiarse.(Pista: las acciones de nuestra web han de ser personalizadas para que el usuario sepa a cúal corresponde).
+
+4. Revisar que las etiquetas html son correctas para el propósito que se está usando(lo que se conoce como semántica web)Por ejemplo: no tiene sentido usar etiquetas que indican mucha cantidad de texto, si sólo tenemos una línea.
+
+## Ejercicio 2
+1. Modificar la tabla existente, para que en mobile se disponga la información en bloque, y en tablet y desktop en fila. Deberá ser con la técnica del data-title para que "el responsive" sea accesible.
+
+### Ejercicio 3
+1. Convertir la tabla que hay, en una de divs y hacerla accesible y responsive con la técnica del ejercicio anterior y añadiendo la técnica ARIA.
+
+### BONUS###
+
+1. Añadir placeholders a los inputs para que favorezcan la accesibilidad del formulario.
