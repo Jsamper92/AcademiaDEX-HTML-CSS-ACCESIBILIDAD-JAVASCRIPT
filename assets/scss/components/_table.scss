@@ -1,0 +1,25 @@
+/*--------------------- TABLE -------------------*/
+
+.table{
+    overflow: auto;
+  }
+  .table__table caption {
+    margin: 10px;
+    text-align: left;
+  }
+  .table__table {
+    width: 100%;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+  }
+  .table__table th,
+  td {
+    height: 40px;
+    border: 1px solid black;
+  }
+  .table__table th {
+    background-color: $primary-theme;
+  }
+  .table__table td {
+    padding-left: 20px;
+  }

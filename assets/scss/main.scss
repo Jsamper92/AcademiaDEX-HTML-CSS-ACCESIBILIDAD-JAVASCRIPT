@@ -1,0 +1,19 @@
+@import "settings/settings.scss";
+@import "tools/tools.scss";
+@import "generic/generic.scss";
+@import "elements/elements.scss";
+@import "objects/objects.scss";
+@import "components/components.scss";
+@import "utilities/utilities.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*--------------------- GENERAL ---------------------*/
+html {
+  font-family: $font-primary;
+  font-size: $base_font_size;
+}
+/*--------------------- END GENERAL ---------------------*/

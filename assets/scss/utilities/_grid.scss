@@ -1,0 +1,23 @@
+/// set-grid Mixin que genera una grid
+/// @param {type} $rule - Variable que define la regla de la media querie
+/// @group grid
+
+$columns: map-get(
+  $map: $grid,
+  $key: "col",
+);
+@each $breakpoint, $break in $breakpoints {
+  @media only screen and (min-width: $break) {
+    @for $i from 1 through $columns {
+      $valor: unquote((100 / $columns * $i) + "%");
+      .col-#{$breakpoint}-#{$i} {
+        box-sizing: border-box;
+        padding: 0 map-get($map: $grid, $key: "gutter");
+        flex: 0 0 $valor;
+        min-width: $valor;
+        max-width: $valor;
+      }
+    }
+  }
+}
+ 

@@ -1,0 +1,15 @@
+.aside > .aside__img {
+  width: 100%;
+  height: max-content;
+}
+.aside {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .aside {
+    background-color: $second-theme;
+    border-left: 1px solid $primary-theme;
+  }
+}

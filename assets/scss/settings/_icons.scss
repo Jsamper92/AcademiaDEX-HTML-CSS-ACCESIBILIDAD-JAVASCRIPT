@@ -1,0 +1,21 @@
+/// Mapa donde se alojan todos los iconos del proyecto desde una fuente icónica, de esta manera cada vez que queramos añadir un nuevo icono, simplemente tendremos 
+/// que importar la nueva fuente, y el nombre del icono con su respectivo valor.
+/// @type map
+/// @example 
+///  .icon-first-page::before {
+///     content: "\e92d";
+///  }
+/// @group icons
+
+$icons: (
+  first-page: "\e92d",
+  last-page: "\e92e",
+  button-success: "\e92c",
+  table-options: "\e92b",
+  mouse-square: "\e928",
+  mouse-circle: "\e929",
+  responsive-table: "\e92a",
+  arrow-down: "\e916",
+  checkbox-unchecked: '\e900',
+  checkbox-checked: '\e901'
+);

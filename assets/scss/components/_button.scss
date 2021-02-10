@@ -1,0 +1,11 @@
+.btn {
+  width: auto;
+  background-color: $primary-theme;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+}
+.btn:hover {
+  background-color: #6c7a00;
+  cursor: pointer;
+}

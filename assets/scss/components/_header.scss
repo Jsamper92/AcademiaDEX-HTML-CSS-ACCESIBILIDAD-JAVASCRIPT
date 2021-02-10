@@ -1,0 +1,40 @@
+/*--------------------- HEADER ---------------------*/
+.header {
+  width: 100%;
+  background-color: $second-theme;
+  background-size: 100%;
+}
+.header .header__title {
+  padding-top: 30px; 
+}
+
+.header__list {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 15px;
+  background-color: white;
+}
+.header__list:hover {
+  background-color: $primary-theme;
+}
+.header__list:hover .header__link {
+  color: white;
+  text-decoration: underline;
+}
+.header__list:first-child {
+  border-left: 1px solid black;
+}
+.header__ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header__link {
+  color: $primary-theme;
+  text-decoration: none;
+}
+
+/*--------------------- END HEADER ---------------------*/

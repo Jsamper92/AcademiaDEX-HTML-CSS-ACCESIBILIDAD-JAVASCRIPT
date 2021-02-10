@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso básico CSS</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
     <header class="header container">
       <div class="col-sm-12 col-md-12 col-lg-12">
-        <h1 class="principal-title">Hola Mundo</h1>
-        <nav>
-          <ul class="navigation-ul">
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-1">Articulo 1</a>
+        <h1 class="header__title">Hola Mundo</h1>
+        <nav class="header__navigation">
+          <ul class="header__ul">
+            <li class="header__list">
+              <a class="header__link" href="#element-1">Articulo 1</a>
             </li>
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-2">Articulo 2</a>
+            <li class="header__list">
+              <a class="header__link" href="#element-2">Articulo 2</a>
             </li>
-            <li class="navigation-list">
-              <a class="navigation-link" href="#element-3">Articulo 3</a>
+            <li class="header__list">
+              <a class="header__link" href="#element-3">Articulo 3</a>
             </li>
           </ul>
         </nav>
@@ -29,13 +29,13 @@
     <section class="container">
       <main class="col-sm-12 col-md-12 col-lg-8">
         <article class="news">
-          <div class="container-news">
+          <div class="news__container">
             <h2 class="subtitle">Mi Noticia</h2>
-            <div class="container-paragraph" id="element-1">
+            <div class="news__container--paragraph" id="element-1">
               <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/html5.jpg" alt="image html5" />
+                <img src="./assets/images/html5.jpg" alt="image html5" />
               </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
+              <div class="news__container--text">
                 <p class="paragraph">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Beatae esse ad doloribus magni, vel voluptatibus animi
@@ -46,12 +46,12 @@
                 <button class="btn">Más información</button>
               </div>
             </div>
-            <div class="container-paragraph" id="element-2">
+            <div class="news__container--paragraph" id="element-2">
               <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/css3.jpg" alt="image html5" />
+                <img src="./assets/images/css3.jpg" alt="image css3" />
               </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
-                <p class="paragraph ">
+              <div class="news__container--text">
+                <p class="paragraph">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Beatae esse ad doloribus magni, vel voluptatibus animi
                   veritatis architecto voluptatem laudantium perspiciatis non
@@ -61,12 +61,12 @@
                 <button class="btn">Más información</button>
               </div>
             </div>
-            <div class="container-paragraph" id="element-3">
+            <div class="news__container--paragraph" id="element-3">
               <figure class="figure col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/images/html5.jpg" alt="image html5" />
+                <img src="./assets/images/html5.jpg" alt="image html5" />
               </figure>
-              <div class="container-text col-sm-12 col-md-8 col-lg-8">
-                <p class="paragraph ">
+              <div class="news__container--text">
+                <p class="paragraph">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Beatae esse ad doloribus magni, vel voluptatibus animi
                   veritatis architecto voluptatem laudantium perspiciatis non
@@ -78,65 +78,70 @@
             </div>
           </div>
         </article>
-        <section class="container-forms">
-          <h2 class="subtitle">Mi Formulario</h2>
+
+        <section class="form">
+          <h2 class="form__title">Mi Formulario</h2>
           <form>
-            <fieldset class="form-data personal-data container">
+            <fieldset class="form__fieldset container">
               <legend class="form-title">Datos personales</legend>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="name">Nombre</label>
+              <div class="form__container col-sm-12 col-md-6 col-lg-2">
+                <label class="form__label" for="name">Nombre</label>
                 <input class="input-text" type="text" id="name" />
               </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="surname">Apellidos</label>
+              <div class="form__container col-sm-12 col-md-6 col-lg-2">
+                <label class="form__label" for="surname">Apellidos</label>
                 <input class="input-text" type="text" id="surname" />
               </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="telephone">Teléfono</label>
+              <div class="form__container col-sm-12 col-md-6 col-lg-2">
+                <label class="form__label" for="telephone">Teléfono</label>
                 <input class="input-text" type="tel" id="telephone" />
               </div>
               <div
-                class="container-form col-sm-12 col-md-6 col-lg-2 container-radiobutton"
+                class="form__container col-sm-12 col-md-6 col-lg-2 form__container--radiobutton"
               >
                 <input
-                  class="input-radio"
+                  class="form__input--radio"
                   type="radio"
                   id="dni"
                   name="identityCard"
                   value="DNI"
                 />
-                <label class="label" for="dni">DNI</label>
+                <label class="form__label" for="dni">DNI</label>
                 <input
-                  class="input-radio"
+                  class="form__input--radio"
                   type="radio"
                   id="nie"
                   name="identityCard"
                   value="NIE"
                 />
-                <label class="label" for="nie">NIE</label><br />
+                <label class="form__label" for="nie">NIE</label><br />
               </div>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="numberIdentityCard"
+              <div class="form__container col-sm-12 col-md-6 col-lg-2">
+                <label class="form__label" for="numberIdentityCard"
                   >Nº Documento</label
                 >
-                <input class="input-text" type="text" id="numberIdentityCard" />
+                <input
+                  class="form__input--text"
+                  type="text"
+                  id="numberIdentityCard"
+                />
               </div>
             </fieldset>
-            <fieldset class="form-data other-data container">
+            <fieldset class="form__fieldset container">
               <legend class="form-title">Otros datos</legend>
-              <div class="container-form col-sm-12 col-md-6 col-lg-2">
-                <label class="label" for="siblings"
+              <div class="form__container col-sm-12 col-md-6 col-lg-2">
+                <label class="form__label" for="siblings"
                   >Número de hermanos/as</label
                 >
                 <input type="number" id="siblings" />
               </div>
-              <div class="container-form">
+              <div class="form__container">
                 <p>Deportes favoritos:</p>
                 <ol>
                   <li>
-                    <label class="label" for="futbol">Fútbol</label>
+                    <label class="form__label" for="futbol">Fútbol</label>
                     <input
-                      class="input-checkbox"
+                      class="form__input--checkbox"
                       type="checkbox"
                       name="futbol"
                       id="futbol"
@@ -144,9 +149,9 @@
                     />
                   </li>
                   <li>
-                    <label class="label" for="bascket">Baloncesto</label>
+                    <label class="form__label" for="bascket">Baloncesto</label>
                     <input
-                      class="input-checkbox"
+                      class="form__input--checkbox"
                       type="checkbox"
                       name="size"
                       id="bascket"
@@ -154,9 +159,9 @@
                     />
                   </li>
                   <li>
-                    <label class="label" for="rugby">Rugby</label>
+                    <label class="form__label" for="rugby">Rugby</label>
                     <input
-                      class="input-checkbox"
+                      class="form__input--checkbox"
                       type="checkbox"
                       name="size"
                       id="rugby"
@@ -164,9 +169,9 @@
                     />
                   </li>
                   <li>
-                    <label class="label" for="paddle">Padel</label>
+                    <label class="form__label" for="paddle">Padel</label>
                     <input
-                      class="input-checkbox"
+                      class="form__input--checkbox"
                       type="checkbox"
                       name="size"
                       id="paddle"
@@ -174,9 +179,11 @@
                     />
                   </li>
                   <li>
-                    <label class="label" for="basque_ball">Pelota vasca</label>
+                    <label class="form__label" for="basque_ball"
+                      >Pelota vasca</label
+                    >
                     <input
-                      class="input-checkbox"
+                      class="form__input--checkbox"
                       type="checkbox"
                       name="size"
                       id="basque_ball"
@@ -192,10 +199,10 @@
             <button class="btn" type="submit">Enviar</button>
           </form>
         </section>
-        <div class="container-table">
-          <table class="table-cool">
+        <div class="table">
+          <table class="table__table">
             <caption>
-              <h2 class="subtitle">Título de nuestra Tabla Molona</h2>
+              <h2 class="table__title">Título de nuestra Tabla Molona</h2>
             </caption>
             <thead>
               <tr>
@@ -225,8 +232,12 @@
           </table>
         </div>
       </main>
-      <aside class="col-sm-12 col-md-12 col-lg-4 image-publicity">
-        <img src="./assets/images/publicity.png" alt="publicidad" />
+      <aside class="col-sm-12 col-md-12 col-lg-4 aside">
+        <img
+          class="aside__img"
+          src="assets/images/publicity.png"
+          alt="publicidad"
+        />
       </aside>
     </section>
   </body>

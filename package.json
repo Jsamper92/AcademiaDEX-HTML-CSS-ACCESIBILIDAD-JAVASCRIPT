@@ -1,0 +1,29 @@
+{
+  "name": "formacion-html-css-sass",
+  "version": "1.0.0",
+  "description": "Course to learn necessary tools to create project with HTML, CSS and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "build": "sass --watch assets/scss/main.scss assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jsamper92/formacion-HTML-CSS-SASS.git"
+  },
+  "author": "Javier Samper Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jsamper92/formacion-HTML-CSS-SASS/issues"
+  },
+  "homepage": "https://github.com/Jsamper92/formacion-HTML-CSS-SASS#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http-server": "^0.12.3",
+    "postcss": "^8.1.7",
+    "postcss-url": "^10.1.0",
+    "sass": "^1.29.0",
+    "sass-lint": "^1.13.1"
+  }
+}
