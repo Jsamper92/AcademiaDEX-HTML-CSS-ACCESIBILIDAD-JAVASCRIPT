@@ -192,3 +192,27 @@ Modificar los estilos pertinentes para que:
 - el radio quede lo más alineado visualmente con el input que tiene al lado.
 - se deje un espacio inferior entre campos y botones para que no queden tan pegados unos a otros.
 - La caja verde de los checkbox quede alinada a la derecha en linea recta y el label en el aldo opuesto.
+
+## Práctica JS
+
+## Ejercicio 1 - Capturar todos los elementos de la tabla en un array de objetos
+1. Crear un fichero table.js y enlázalo con el fichero index.html
+2. Capturar todos los elementos de la tabla y guardarlos en un array de objetos. El nombre de las propiedades de este objeto será el nombre de cada columna
+3. Imprimir por consola
+
+## Ejercicio 2 - Validar todos los campos del formulario al hacer click en 'Enviar'
+1. Añadir un evento click a cada elemento button (el de reset por propiedad y el de enviar con un listener) 
+2. Crear una función de validación para el botón de 'Enviar' donde valide cada uno de los parametros 
+2.1 esta función primero ha de capturar todos los inputs
+2.2 esta función ha de comprobar que el nombre de la nueva persona añadir, no se corresponde con uno de los nombres de la tabla
+2.3 luego deberá comprobar que cada uno de sus valores se corresponde con el tipo esperado
+3. En caso de que algún campo de error, se pintará su recuadro en rojo
+4. En caso de que esté todo OK, deberá llamar a una funcion 'addPerson()' a la cual se le pase en su argumento la nueva persona a añadir.
+
+## Ejercicio 3
+1. La función 'addPerson()' deberá añadir en la tabla el objeto que se le pasa como parámetro
+
+
+### BONUS ###
+1. Petición Fetch
+
