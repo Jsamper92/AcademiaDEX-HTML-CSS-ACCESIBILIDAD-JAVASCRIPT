@@ -202,17 +202,11 @@ Modificar los estilos pertinentes para que:
 
 ## Ejercicio 2 - Validar todos los campos del formulario al hacer click en 'Enviar'
 1. Añadir un evento click a cada elemento button (el de reset por propiedad y el de enviar con un listener) 
-2. Crear una función de validación para el botón de 'Enviar' donde valide cada uno de los parametros 
-2.1 esta función primero ha de capturar todos los inputs
-2.2 esta función ha de comprobar que el nombre de la nueva persona añadir, no se corresponde con uno de los nombres de la tabla
-2.3 luego deberá comprobar que cada uno de sus valores se corresponde con el tipo esperado
+2. Crear una función de validación para el botón de 'Enviar' donde valide cada uno de los parametros. Esta función  ha de capturar todos los inputs y comprobar que ninguno esté vacio.
 3. En caso de que algún campo de error, se pintará su recuadro en rojo
 4. En caso de que esté todo OK, deberá llamar a una funcion 'addPerson()' a la cual se le pase en su argumento la nueva persona a añadir.
 
-## Ejercicio 3
+## Ejercicio 3 - Añadir el usuario del formulario a la tabla
 1. La función 'addPerson()' deberá añadir en la tabla el objeto que se le pasa como parámetro
 
-
-### BONUS ###
-1. Petición Fetch
 
